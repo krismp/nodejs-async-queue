@@ -18,6 +18,8 @@ queue.on('dequeued', (item) => {
     console.log('Next At Head:', queue.peek());
 });
 
+queue.on('interval', queue.changeInterval);
+
 setTimeout(() => {
     queue.emit('interval', 250);
 }, 4000);
@@ -36,4 +38,3 @@ setTimeout(() => {
     console.log(queue.print());
 
 }, 8000);
-
