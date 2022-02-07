@@ -7,6 +7,7 @@ class AsyncQueue extends EventEmitter {
         this.currentInterval = 250;
         this.isPaused = false;
         this.interval = null;
+        this.on('interval', this.changeInterval);
     }
 
     enqueue(item) {

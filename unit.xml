@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="1.7000" tests="8" failures="3">
-  <testsuite name="Root Suite" timestamp="2022-02-07T04:16:53" tests="0" time="0.0000" failures="0">
+<testsuites name="Mocha Tests" time="1.8020" tests="8" failures="2">
+  <testsuite name="Root Suite" timestamp="2022-02-07T04:38:12" tests="0" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="async_queue" timestamp="2022-02-07T04:16:53" tests="8" file="/Users/krismp/Downloads/NodeJS - Async Queue/test/index.spec.js" time="1.7000" failures="3">
-    <testcase name="async_queue Should have all the methods in the class" time="0.0020" classname="Should have all the methods in the class">
+  <testsuite name="async_queue" timestamp="2022-02-07T04:38:12" tests="8" file="/Users/krismp/Downloads/NodeJS - Async Queue/test/index.spec.js" time="1.8020" failures="2">
+    <testcase name="async_queue Should have all the methods in the class" time="0.0010" classname="Should have all the methods in the class">
     </testcase>
-    <testcase name="async_queue Should enqueue the items to the queue" time="0.0220" classname="Should enqueue the items to the queue">
+    <testcase name="async_queue Should enqueue the items to the queue" time="0.0230" classname="Should enqueue the items to the queue">
     </testcase>
-    <testcase name="async_queue Should return the item at head when peek method is called" time="0.0000" classname="Should return the item at head when peek method is called">
+    <testcase name="async_queue Should return the item at head when peek method is called" time="0.0010" classname="Should return the item at head when peek method is called">
     </testcase>
-    <testcase name="async_queue Should start the dequeue process once start method is called" time="0.5210" classname="Should start the dequeue process once start method is called">
+    <testcase name="async_queue Should start the dequeue process once start method is called" time="0.5220" classname="Should start the dequeue process once start method is called">
     </testcase>
-    <testcase name="async_queue Should dequeue items every 250ms from the queue" time="0.5110" classname="Should dequeue items every 250ms from the queue">
+    <testcase name="async_queue Should dequeue items every 250ms from the queue" time="0.5120" classname="Should dequeue items every 250ms from the queue">
     </testcase>
-    <testcase name="async_queue Should update the queue interval" time="0.0010" classname="Should update the queue interval">
-      <failure message="expected 250 to deeply equal 20" type="AssertionError"><![CDATA[AssertionError: expected 250 to deeply equal 20
-    at Context.<anonymous> (test/index.spec.js:95:43)
-    at processImmediate (node:internal/timers:462:21)]]></failure>
+    <testcase name="async_queue Should update the queue interval" time="0.1010" classname="Should update the queue interval">
     </testcase>
-    <testcase name="async_queue Should pause the dequeue process" time="0.3220" classname="Should pause the dequeue process">
+    <testcase name="async_queue Should pause the dequeue process" time="0.3210" classname="Should pause the dequeue process">
       <failure message="expected 0 to deeply equal 1" type="AssertionError"><![CDATA[AssertionError: expected 0 to deeply equal 1
     at Timeout._onTimeout (test/index.spec.js:138:43)
     at listOnTimeout (node:internal/timers:555:17)
