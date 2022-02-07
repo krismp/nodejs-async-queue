@@ -27,6 +27,7 @@ class AsyncQueue extends EventEmitter {
     }
 
     start() {
+        this.isPaused = false;
         this.interval = setInterval(() => {
             if (this.isPaused) {
                 clearInterval(this.interval);
